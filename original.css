@@ -230,7 +230,7 @@ Sidebar ---------------------------------------------
   column-count: 1; }
 
 .popular-card:hover, .popular-card:focus {
-  transform: scale3d(1.006, 1.006, 1); }
+  color: #EE5C11; }
 
 .popular-card-title {
   margin: .5em; }
@@ -259,6 +259,7 @@ footer ---------------------------------------------
   background-color: #ECECEC;
   bottom: 0;
   height: 3em;
+  left: 0;
   position: absolute;
   width: 100%; }
   .footer span {
