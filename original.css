@@ -166,9 +166,9 @@ Contents ---------------------------------------------
 .post-date {
   margin-bottom: 1em; }
 
-section h2,
-section h3,
-section h4 {
+.main-article h2,
+.main-article h3,
+.main-article h4 {
   margin: 1.5em 0 1em; }
 
 /* リスト */
