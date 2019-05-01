@@ -11,14 +11,6 @@ $("img").lazyload({
   placeholder: "data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
 });
 
-// NavBar----------------------------------------------------------------------
-// メニュー選択時にメニューを畳む
-$('.navbar-nav>li>a , .dropdown-menu>a').on('click', function(){
-  if(this.id != 'navbarDropdownMenuLink'){
-    $('.navbar-collapse').collapse('hide');
-  }
-});
-
 //page topボタン----------------------------------------------------------------------
 /*初期状態ではボタンが隠れている*/
 $('#back-to-top').hide();
