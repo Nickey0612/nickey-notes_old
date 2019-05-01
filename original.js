@@ -1,4 +1,3 @@
-//----------------------------------------------------------------------
 // リンクを別タブで開く
 $('a:not([href^="https://nickey-notes.blogspot."])'+'a:not([href="javascript:void(0)"])'+'a:not([href^="#"])').click(function(){
   window.open(this.href);
@@ -58,15 +57,3 @@ $('.report-table td').each(function(i, e) {
     }
   }
 });
-
-/*
-SNS用のシェアURLを生成
-*/
-function createShareLink(url, params) {
-    var encoded_params = [];
-    for (var key in params) {
-        var value = encodeURIComponent(params[key]);
-        encoded_params.push(key + "=" + value);
-    }
-    return url + "?" + encoded_params.join("&");
-}
