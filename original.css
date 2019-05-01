@@ -9,6 +9,12 @@
 html {
   min-height: 100%;
   position: relative; }
+  @media (max-width: 767.98px) {
+    html {
+      font-size: 16px; } }
+  @media (min-width: 768px) {
+    html {
+      font-size: 18px; } }
 
 body {
   /* font settings */
@@ -19,14 +25,6 @@ body {
   line-height: 1.75;
   margin-bottom: 3em;
   /* footer height */ }
-
-/* メインのフォントサイズ */
-@media (max-width: 767.98px) {
-  body {
-    font-size: 16px; } }
-@media (min-width: 768px) {
-  body {
-    font-size: 18px; } }
 
 /* サブのフォントサイズ */
 @media (max-width: 767.98px) {
@@ -65,10 +63,7 @@ a:hover {
 
 main {
   margin: 1em auto;
-  max-width: 50em !important;
-  /* 記事一覧の場合 */
-  max-width: 35em !important;
-  /* 記事の場合 */ }
+  max-width: 35em !important; }
 
 aside {
   margin: 1em 0; }
@@ -82,19 +77,46 @@ h6 {
   color: #333333;
   opacity: initial; }
 
-h2 {
-  background-color: #ECECEC;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  padding: .3em; }
+@media (max-width: 767.98px) {
+  h1 {
+    font-size: 36px; } }
+@media (min-width: 768px) {
+  h1 {
+    font-size: 24px; } }
 
-h3 {
+h2 {
+  border-bottom: 1px solid #ccc;
+  padding: .3em; }
+  @media (max-width: 767.98px) {
+    h2 {
+      font-size: 26px; } }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 22px; } }
+
+h3,
+.side-block-title {
+  border-bottom: 1px solid #ccc;
+  padding: .25em 0 .3em .3em; }
+  @media (max-width: 767.98px) {
+    h3,
+    .side-block-title {
+      font-size: 24px; } }
+  @media (min-width: 768px) {
+    h3,
+    .side-block-title {
+      font-size: 20px; } }
+
+h4 {
   border-left: 6px solid #ccc;
   border-bottom: 1px solid #ccc;
   padding: .25em 0 .3em .3em; }
-
-h4 {
-  border-bottom: 1px solid #ccc;
-  padding: .25em 0 .3em .3em; }
+  @media (max-width: 767.98px) {
+    h4 {
+      font-size: 20px; } }
+  @media (min-width: 768px) {
+    h4 {
+      font-size: 18px; } }
 
 .posts-tags,
 .post-tags {
