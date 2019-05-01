@@ -172,16 +172,34 @@ Contents ---------------------------------------------
   margin: 1.5em 0 1em; }
 
 /* リスト */
-.post-ul li {
+.post-ul li,
+.post-ul-posi li,
+.post-ul-nega li {
   list-style-type: none !important; }
 
 .post-ul li:before {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
-  content: "\f00c";
+  content: "\f068";
   position: absolute;
   left: 1em;
   color: #EE5C11; }
+
+.post-ul-posi li:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00c";
+  position: absolute;
+  left: 1em;
+  color: green; }
+
+.post-ul-nega li:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f00d";
+  position: absolute;
+  left: 1em;
+  color: red; }
 
 /* 引用 */
 blockquote {
