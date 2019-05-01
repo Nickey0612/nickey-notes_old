@@ -81,14 +81,16 @@ h6 {
 h2 {
   background-color: #ECECEC;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
-  margin-top: 1em;
-  padding: .5em .75em; }
+  padding: .3em; }
 
 h3 {
   border-left: 6px solid #ccc;
   border-bottom: 1px solid #ccc;
-  margin-top: 1em;
-  padding: .25em 0 .5em .75em; }
+  padding: .25em 0 .3em .3em; }
+
+h4 {
+  border-bottom: 1px solid #ccc;
+  padding: .25em 0 .3em .3em; }
 
 .posts-tags,
 .post-tags {
@@ -215,14 +217,8 @@ thead {
   color: #ccc;
   text-align: center; }
 
-/*
-前後投稿へのリンク
-*/
-.newer-older {
-  padding-top: 1em; }
-
 .post-footer {
-  padding: 2em 0; }
+  padding: 1em 0; }
 
 /*
 Amazon
