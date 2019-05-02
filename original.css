@@ -85,7 +85,7 @@ h6 {
     font-size: 36px; } }
 
 h2 {
-  border-bottom: 1px solid #ccc;
+  border-bottom: 2px solid #EE5C11;
   padding: .3em; }
   @media (max-width: 767.98px) {
     h2 {
@@ -95,7 +95,7 @@ h2 {
       font-size: 26px; } }
 
 h3 {
-  border-bottom: 3px double #ccc;
+  border-bottom: 3px double #EE5C11;
   padding: .25em 0 .3em .3em; }
   @media (max-width: 767.98px) {
     h3 {
@@ -105,8 +105,7 @@ h3 {
       font-size: 24px; } }
 
 h4 {
-  border-left: 6px solid #ccc;
-  border-bottom: 3px double #ccc;
+  border-bottom: 1px double #ccc;
   padding: .25em 0 .3em .3em; }
   @media (max-width: 767.98px) {
     h4 {
