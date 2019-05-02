@@ -22,11 +22,15 @@ $(document).ready(function(){
     }
     scrollHeight = $(document).height(); //ドキュメントの高さ 
     scrollPosition = $(window).height() + $(window).scrollTop(); //現在地 
-    footHeight = $("footer").innerHeight(); //footerの高さ（＝止めたい位置）
-    if ( scrollHeight - scrollPosition  <= footHeight ) { //ドキュメントの高さと現在地の差がfooterの高さ以下になったら
+    if(window.parent.screen.width < 701) {
+      footHeight = $("footer").innerHeight() + $(".newer-older").innerHeight() + 16; //footerの高さ（＝止めたい位置）
+    } else {
+      footHeight = $("footer").innerHeight(); //footerの高さ（＝止めたい位置）
+    }
+    if ( scrollHeight - scrollPosition  <= footHeight) { //ドキュメントの高さと現在地の差がfooterの高さ以下になったら
       $("#topBtn").css({
         "position":"absolute", //pisitionをabsolute（親：wrapperからの絶対値）に変更
-        "bottom": footHeight + 44 //下からfooterの高さ + 20px上げた位置に配置
+        "bottom": footHeight + 20 //下からfooterの高さ + 20px上げた位置に配置
       });
     } else { //それ以外の場合は
       $("#topBtn").css({
