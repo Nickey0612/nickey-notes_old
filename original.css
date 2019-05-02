@@ -275,11 +275,13 @@ Sidebar ---------------------------------------------
   margin-bottom: 1.5em; }
 
 #side-labels a,
-#side-archive a {
+#side-archive a,
+.amazon-card-body a {
   color: rgba(51, 51, 51, 0.8);
   text-decoration: none; }
   #side-labels a:hover,
-  #side-archive a:hover {
+  #side-archive a:hover,
+  .amazon-card-body a:hover {
     color: #EE5C11;
     text-decoration: none; }
 
