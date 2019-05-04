@@ -347,6 +347,9 @@ Sidebar ---------------------------------------------
 /*
 footer ---------------------------------------------
 */
+.newer-older {
+  padding-bottom: 80px; }
+
 .footer {
   background-color: #ECECEC;
   bottom: 0;
