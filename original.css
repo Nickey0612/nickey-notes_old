@@ -214,7 +214,7 @@ Contents ---------------------------------------------
   counter-reset: list;
   background-color: rgba(0, 0, 0, 0.03);
   list-style-type: none !important;
-  padding: 1em; }
+  padding: .5em; }
   .post-ul li,
   .post-ul-posi li,
   .post-ul-nega li,
