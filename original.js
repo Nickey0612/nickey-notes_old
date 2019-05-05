@@ -1,8 +1,10 @@
 // リンクを別タブで開く
+/*
 $('a:not([href^="https://nickey-notes.blogspot."])'+'a:not([href="javascript:void(0)"])'+'a:not([href^="#"])').click(function(){
   window.open(this.href);
   return false;
 });
+*/
 
 // 画像の遅延読み込み
 $("img").lazyload({
