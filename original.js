@@ -47,12 +47,9 @@ $(document).ready(function(){
 /*
 Table Sorter
 */
-$('.report-table').DataTable({
+$('.sortable-table').DataTable({
   info: false,
-  paging: false,
-  'language': {
-    "url": "//cdn.datatables.net/plug-ins/1.10.16/i18n/Japanese.json"
-  }
+  paging: false
 });
 
 /*
@@ -67,8 +64,14 @@ $('.report-table td').each(function(i, e) {
       } else if($(this).text() < 0) {
         $(this).css('color', 'red');
       }
-      $(this).text(Number($(this).text()).toLocaleString());
+      if($(this).hasClass('pip')) {
+        $(this).text(Number($(this).text()).toFixed(1).toLocaleString());
+      }else{
+        $(this).text(Number($(this).text()).toLocaleString());
+      }
       $(this).css('text-align', 'right');
+    } else if($(this).text() === '-') {
+      $(this).css('text-align', 'center');
     }
   }
 });
