@@ -45,6 +45,17 @@ $(document).ready(function(){
 });
 
 /*
+Table Sorter
+*/
+$('.report-table').DataTable({
+  info: false,
+  paging: false,
+  'language': {
+    "url": "//cdn.datatables.net/plug-ins/1.10.16/i18n/Japanese.json"
+  }
+});
+
+/*
 report tableのセルの数字がマイナスの場合は文字色を赤くする
 また、4桁以上の数字はカンマ区切りに変換する
 */
