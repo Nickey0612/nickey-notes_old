@@ -66,7 +66,7 @@ $('.report-table td').each(function(i, e) {
       }
       if($(this).hasClass('pip')) {
         $(this).text(Number($(this).text()).toFixed(1).toLocaleString());
-      }else{
+      }else if($(this).text() != ""){
         $(this).text(Number($(this).text()).toLocaleString());
       }
       $(this).css('text-align', 'right');
