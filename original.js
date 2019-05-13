@@ -4,13 +4,6 @@ $('a:not([href^="https://nickey-notes.blogspot."])'+'a:not([href="javascript:voi
   return false;
 });
 
-// 画像の遅延読み込み
-$("img").lazyload({
-  effect     : "fadeIn",
-  skip_invisible: true,
-  placeholder: "data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
-});
-
 //page topボタン----------------------------------------------------------------------
 $(document).ready(function(){
   $("#topBtn").hide();
