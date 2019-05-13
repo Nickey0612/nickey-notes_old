@@ -29,6 +29,10 @@ body {
   margin-bottom: 3em;
   /* footer height */ }
 
+.lozad {
+  display: block;
+  min-height: 1rem; }
+
 /* サブのフォントサイズ */
 @media (max-width: 767.98px) {
   .tag,
