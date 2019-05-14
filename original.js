@@ -73,9 +73,15 @@ $('.report-table td').each(function(i, e) {
 Lazy Load(lozad.js)
 生成されたimgタグに対してbootstrap4用のclass名を付与する
 */
-const observer = lozad('.lozad', {
+const observer1 = lozad('.lozad', {
   loaded: function(el) {
     el.querySelector('img').classList.add('img-fluid', 'img-thumbnail');
   }
 });
-observer.observe();
+const observer2 = lozad('.lozad-list', {
+  loaded: function(el) {
+    el.querySelector('img').classList.add('card-img');
+  }
+});
+observer1.observe();
+observer2.observe();
