@@ -4,13 +4,6 @@ $('a:not([href^="https://nickey-notes.blogspot."])'+'a:not([href="javascript:voi
   return false;
 });
 
-// 画像の遅延読み込み
-$("img").lazyload({
-  effect     : "fadeIn",
-  skip_invisible: true,
-  placeholder: "data:image/gif;base64,R0lGODlhAQABAIAAAMLCwgAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw=="
-});
-
 //page topボタン----------------------------------------------------------------------
 $(document).ready(function(){
   $("#topBtn").hide();
@@ -75,3 +68,20 @@ $('.report-table td').each(function(i, e) {
     }
   }
 });
+
+/*
+Lazy Load(lozad.js)
+生成されたimgタグに対してbootstrap4用のclass名を付与する
+*/
+const observer1 = lozad('.lozad', {
+  loaded: function(el) {
+    el.querySelector('img').classList.add('img-fluid', 'img-thumbnail');
+  }
+});
+const observer2 = lozad('.lozad-list', {
+  loaded: function(el) {
+    el.querySelector('img').classList.add('card-img');
+  }
+});
+observer1.observe();
+observer2.observe();
